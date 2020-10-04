@@ -1,0 +1,121 @@
+
+.banner{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+.lunch-banner{
+    background-image: url(./images/sliced-bread-with-avocado-2067423.jpg);
+}
+.dinner-banner{
+    background-image: url(./images/dinner.jpg);
+}
+.dessert-banner{
+    background-image: url(./images/dessert.jpg);
+}
+.wine-banner{
+    background-image: url(./images/wine.jpg);
+}
+.banner::after{
+    content: "";
+    height: 250px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+.banner h1{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    z-index: 6;
+}
+.main-content{
+    text-align: center;
+}
+.main-content h2{
+    margin-top: 20px;
+    position: relative;
+}
+.dish-content{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70vw;
+}
+.dish-content h2::before{
+    content:"";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 1.5px;
+    background:  rgb(36, 116, 109) ;
+}
+.dish-list{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.dish{
+    width: 30%;
+    margin-top: 20px;
+}
+.desciption{
+    font-size: 0.7rem;
+    color: grey;
+}
+.dish .price{
+    margin-top: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.fixed-dish{
+    margin-top: 50px;
+}
+
+.contact-session{
+    top: 300px;
+    
+}
+.contact-session::after{
+    left: 0;
+}
+
+@media screen and (max-width:1600px){
+    
+    .contact-session{
+        top: 600px;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    .dish{
+        width: 40%;
+    }
+    .contact-session{
+        top: 1200px;
+    }
+    
+}
+
+@media screen and (max-width:570px){
+    .dish{
+        width: 100%;
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <!--narbar-->
+    <nav>
+        <div class="logo"><h1>Kid Lee</h1></div>
+        <div class="toggle-btn">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+    </nav>
+    <!--sidebar start-->
+    <div class="sidebar">
+        <ul>
+            <a href="#welcome-session"><li>Welcome to Kid Lee</li></a>
+            <a href="#menu-session"><li>Menus</li></a>
+            <a href="#gallery-session"><li>Gallery</li></a>
+            <a href="#contact-session"><li>Contact</li></a>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+        </ul>
+    </div>
+    <!--Page content-->
+    <div class="main-content">
+        <!--main piccture-->
+        <div class="main-img">
+            <div class="img-frame">
+            <div class="img-frame-content">
+                <p>Expensive but the best.</p>
+                <button class="view-menus-btn">VIEW MENUS</button>
+                <button class="reservation-btn">MAKE A RESERVATION</button>
+            </div>
+            
+        </div>
+        <div class="img-filter"></div>
+        </div>
+        <!--Welcome session-->
+        <div class="welcome-session" id="welcome-session">
+            <div class="welcome-text">
+                <h1>Welcome to Kid Lee</h1>
+                <p>The newest constellation in the Lee universe in Kid Lee; located in the food court of Toronto's most populated business address, First Canadian Place .</p>
+                <p>Setting out to redefine food court fare, professionals on-the-go can build their own lunch combos from fresh seasonal options. Kid lee's mouth-watering menu ensures a lunch-counter that goes down easy.</p>
+            </div>
+            <div class="welcome-img">
+                <div class="welcome-img-frame"></div>
+            </div>
+        </div>
+        <!--Menu Session-->
+        <div class="menu-session" id="menu-session">
+            <div class="menu-text">
+                <h1>Menus</h1>
+            </div>
+            <div class="menus">
+                <a href="./lunch.html"><div class="menu-item">
+                    <div class="menu-item-child lunch"></div>
+                    <div class="menu-item-content">Lunch<p>View this menu</p></div>
+                </div></a>
+                
+                <a href="./dinner.html"><div class="menu-item ">
+                    <div class="menu-item-child dinner"></div>
+                    <div class="menu-item-content">Dinner<p>View this menu</p></div>
+                </div></a>
+                <a href="./dessert.html"><div class="menu-item">
+                    <div class="menu-item-child dessert"></div>
+                    <div class="menu-item-content">Dessert<p>View this menu</p></div>
+                </div></a>
+                <a href="./wine.html"><div class="menu-item">
+                    <div class="menu-item-child wine"></div>
+                    <div class="menu-item-content">Wine<p>View this menu</p></div>
+                </div></a>
+            </div>
+        </div>
+        <!--Gallery-->
+        <div class="gallery-session" id="gallery-session">
+            <h1>Follow us on Instagram</h1>
+            <div class="gallery">
+                <div class="gallery-item item-1"></div>
+                <div class="gallery-item item-2"></div>
+                <div class="gallery-item item-3"></div>
+                <div class="gallery-item item-4"></div>
+                <div class="gallery-item item-5"></div>
+                <div class="gallery-item item-6"></div>
+                <div class="gallery-item item-7"></div>
+                <div class="gallery-item item-8"></div>
+            </div>
+            <a href="https://www.instagram.com/kidleefood/" target="_blank"><div class="button"><p>SEE ALL POSTS</p></div></a>
+        </div>
+        <!--Contact Session-->
+        <div class="contact-session" id="contact-session">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2>CONTACT US</h2>
+                    <p>We are looking forward to serve you better</p>
+                    <div class=contact-content-box>
+                        <div class="contact-item">
+                            <a href="https://www.google.com/maps/place/First+Canadian+Place/@43.6491511,-79.3839554,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34d2a57d767f:0x935ab2eb9fd5fb31!8m2!3d43.6491472!4d-79.3817667"><div class="img-border">
+                                <img src="./images/address.png" alt="">
+                            </div></a>
+                            <p>First Canadian Pl, ON M5X 1A1</p>
+                        </div>
+                        <div class="contact-item">
+                            <a href=""><div class="img-border">
+                                <img src="./images/phone.ico" alt="">
+                            </div></a>
+                            <p>(416)939-0448</p>
+                        </div>
+                        <div class="contact-item">
+                            <a href=""><div class="img-border">
+                                <img src="./images/email.ico" alt="">
+                            </div></a>
+                            <p>example@gmail.com</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
